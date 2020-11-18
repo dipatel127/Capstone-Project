@@ -8,5 +8,10 @@ problem. The codes for Exploratory Data Analysis, and correlationa analysis of t
 Third part of dataset is actually a test dataset, to which a learned model from notbook_train_features_R will be applied.
 EDA of train features and label datasets are performed in R.
 classification model is performed in Python.
-Binary Revelance is chosen as base model for classification. The code for this model is shown in notbook_Model_BR_Py
-second order and higher order strategy of models will be also be considered for comaprison purpose....
+Multioutput classification is chosen as base model for classification. The Random Forest is supplied as base classifier in this classification method.
+For comparison purpose, two other models are developed : RakelD and Neural Network.
+Since PCA did not reduce the dataset significantly, the entire dataset is used for model building.
+In the label dataset, sample IDs for which there was no activation of label has been removed entirly. Then both train dataset and label dataset are merged with common column which is sample id.
+In all three models, repeated K fold cross validation method is used to create train and test dataset. Total 30 folds are created.
+Accuracy, Log Loss, Hamming Loss, and Zero One Loss are used as evaluation metrics.
+The mean and standard deviation of all results are taken into consideration as valid results.
