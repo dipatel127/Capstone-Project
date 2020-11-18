@@ -1,11 +1,11 @@
 # Capstone-Project
 In this project, the application of machine learning to pharmaceutical dataset is considered. 
 # DataSet
-Datasets are given in CSV format in two different parts. Feature DataSet and Label DataSet
-# Feature DataSet
+Datasets are given in CSV format in two different parts. Feature dataset and Label dataset can be found at [Kaggle](https://www.kaggle.com/c/lish-moa).
+# Feature dataset
 This dataset contains all gene features and cell features along with other categorical parameters as reference to which features' value have been measured. 
 The codes for Exploratory Data Analysis, Pincipal component analysis, and correlation analysis of this part of dataset is shown in notbook_train_features_R
-# Label DataSet
+# Label dataset
 This dataset reflects labels for each instances. Since each instances has more than one class, this classification is turned out to be a multilabel classification
 problem. The codes for Exploratory Data Analysis, and correlationa analysis of this part of dataset is shown in notbook_target_scored_R
 # EDA
